@@ -7,7 +7,7 @@
 #include "openvslam/data/map_database.h"
 #include "openvslam/util/converter.h"
 
-#include <spdlog/spdlog.h>
+#include "spdlog/spdlog.h"
 #include <nlohmann/json.hpp>
 
 namespace openvslam {

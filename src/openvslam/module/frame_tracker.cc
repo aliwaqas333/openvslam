@@ -7,7 +7,7 @@
 #include "openvslam/match/robust.h"
 #include "openvslam/module/frame_tracker.h"
 
-#include <spdlog/spdlog.h>
+#include "spdlog/spdlog.h"
 
 namespace openvslam {
 namespace module {

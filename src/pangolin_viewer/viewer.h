@@ -2,6 +2,7 @@
 #define PANGOLIN_VIEWER_VIEWER_H
 
 #include "pangolin_viewer/color_scheme.h"
+//#include "color_scheme.h"
 
 #include "openvslam/type.h"
 

@@ -5,7 +5,7 @@
 #include "openvslam/module/relocalizer.h"
 #include "openvslam/util/fancy_index.h"
 
-#include <spdlog/spdlog.h>
+#include "spdlog/spdlog.h"
 
 namespace openvslam {
 namespace module {

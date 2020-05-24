@@ -7,7 +7,7 @@
 #include "openvslam/solve/sim3_solver.h"
 #include "openvslam/util/converter.h"
 
-#include <spdlog/spdlog.h>
+#include "spdlog/spdlog.h"
 
 namespace openvslam {
 namespace module {

@@ -1,4 +1,5 @@
-#include "pangolin_viewer/viewer.h"
+//#include "pangolin_viewer/viewer.h"
+#include "viewer.h"
 
 #include "openvslam/config.h"
 #include "openvslam/system.h"

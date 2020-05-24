@@ -6,7 +6,7 @@
 #include "openvslam/data/map_database.h"
 #include "openvslam/io/map_database_io.h"
 
-#include <spdlog/spdlog.h>
+#include "spdlog/spdlog.h"
 #include <nlohmann/json.hpp>
 
 namespace openvslam {

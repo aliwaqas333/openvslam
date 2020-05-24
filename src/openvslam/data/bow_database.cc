@@ -2,7 +2,7 @@
 #include "openvslam/data/keyframe.h"
 #include "openvslam/data/bow_database.h"
 
-#include <spdlog/spdlog.h>
+#include "spdlog/spdlog.h"
 
 namespace openvslam {
 namespace data {

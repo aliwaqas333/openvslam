@@ -8,7 +8,9 @@
 #include <atomic>
 
 #include <opencv2/core/core.hpp>
-#include <nlohmann/json_fwd.hpp>
+//#include <nlohmann/json_fwd.hpp>
+#include "nlohmann/json_fwd.hpp"
+
 
 namespace openvslam {
 namespace data {

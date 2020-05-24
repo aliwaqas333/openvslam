@@ -15,7 +15,7 @@
 #include <opencv2/imgcodecs.hpp>
 #include <opencv2/imgproc.hpp>
 #include <opencv2/videoio.hpp>
-#include <spdlog/spdlog.h>
+#include "spdlog/spdlog.h"
 #include <popl.hpp>
 
 #ifdef USE_STACK_TRACE_LOGGER

@@ -2,7 +2,7 @@
 #include "openvslam/initialize/bearing_vector.h"
 #include "openvslam/solve/essential_solver.h"
 
-#include <spdlog/spdlog.h>
+#include "spdlog/spdlog.h"
 
 namespace openvslam {
 namespace initialize {

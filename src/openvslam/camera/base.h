@@ -8,7 +8,7 @@
 
 #include <opencv2/core.hpp>
 #include <yaml-cpp/yaml.h>
-#include <nlohmann/json_fwd.hpp>
+#include "nlohmann/json_fwd.hpp"
 
 namespace openvslam {
 namespace camera {

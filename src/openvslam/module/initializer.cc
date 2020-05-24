@@ -8,7 +8,7 @@
 #include "openvslam/module/initializer.h"
 #include "openvslam/optimize/global_bundle_adjuster.h"
 
-#include <spdlog/spdlog.h>
+#include "spdlog/spdlog.h"
 
 namespace openvslam {
 namespace module {

@@ -1,6 +1,6 @@
 #include "socket_publisher/socket_client.h"
 
-#include <spdlog/spdlog.h>
+#include "spdlog/spdlog.h"
 
 namespace socket_publisher {
 

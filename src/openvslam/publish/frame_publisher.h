@@ -74,7 +74,7 @@ protected:
     //! raw img
     cv::Mat img_;
     //! tracking state
-    tracker_state_t tracking_state_;
+    tracker_state_t tracking_state_ = tracker_state_t::NotInitialized;
 
     //! initial keypoints
     std::vector<cv::KeyPoint> init_keypts_;
@@ -88,7 +88,7 @@ protected:
     double elapsed_ms_ = 0.0;
 
     //! mapping module status
-    bool mapping_is_enabled_;
+    bool mapping_is_enabled_ = false;
 
     //! tracking flag for each current keypoint
     std::vector<bool> is_tracked_;

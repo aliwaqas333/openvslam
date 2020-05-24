@@ -3,7 +3,7 @@
 #include "openvslam/data/map_database.h"
 #include "openvslam/publish/map_publisher.h"
 
-#include <spdlog/spdlog.h>
+#include "spdlog/spdlog.h"
 
 namespace openvslam {
 namespace publish {

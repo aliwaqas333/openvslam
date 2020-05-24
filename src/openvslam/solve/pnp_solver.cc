@@ -3,7 +3,7 @@
 #include "openvslam/util/random_array.h"
 #include "openvslam/util/trigonometric.h"
 
-#include <spdlog/spdlog.h>
+#include "spdlog/spdlog.h"
 
 namespace openvslam {
 namespace solve {

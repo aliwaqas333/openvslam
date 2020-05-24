@@ -2,7 +2,7 @@
 #include "openvslam/data/map_database.h"
 #include "openvslam/publish/frame_publisher.h"
 
-#include <spdlog/spdlog.h>
+#include "spdlog/spdlog.h"
 #include <opencv2/imgproc.hpp>
 
 namespace openvslam {

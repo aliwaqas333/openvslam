@@ -1,4 +1,5 @@
 #include "pangolin_viewer/color_scheme.h"
+//#include "color_scheme.h"
 
 namespace pangolin_viewer {
 

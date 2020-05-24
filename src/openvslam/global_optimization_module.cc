@@ -6,7 +6,7 @@
 #include "openvslam/match/fuse.h"
 #include "openvslam/util/converter.h"
 
-#include <spdlog/spdlog.h>
+#include "spdlog/spdlog.h"
 
 namespace openvslam {
 

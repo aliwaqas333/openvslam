@@ -7,7 +7,7 @@
 
 #include <thread>
 
-#include <spdlog/spdlog.h>
+#include "spdlog/spdlog.h"
 
 namespace openvslam {
 namespace module {
