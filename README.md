@@ -1,3 +1,78 @@
+#Welcome
+This is a work in progress started on May 2020.  Original openvslam is being adapted to be built on eclipse instead of using cmake, to allow programmers modify the code mainly for testing and usability porpuses.
+
+This project is built in eclipse CDT with C++17 and opencv 4, on Ubuntu 20.04.  Should work on any:
+
+- C++11+ (this can change if I start rewritting using ranges)
+- any C++ IDE, but tips in this file asume you're using eclipse CDT and gcc
+- opencv 3+
+- any Debian (it includes any Ubuntu, any Linux Mint...)
+
+This readme will be updated with compilation tips, followed by original openvslam README.
+
+#Compilation tips
+You need dependencies installed as indicated in openvslam installation manual.
+
+The following setting are already set up in eclipse .project files in this repository.
+
+##Libraries settings
+You'll need to set up these dependencies libraries in your IDE:
+
+Assuming local viewer (I didn't try web viewer):
+- pangolin
+- GL
+- GLEW
+
+OpenCV (this list may contain some unneeded opencv library):
+- opencv_core
+- opencv_imgproc
+- opencv_highgui
+- opencv_features2d
+- opencv_calib3d
+- opencv_video
+- opencv_videio
+- opencv_imgcodecs
+
+
+g2o:
+- g2o_core
+- g2o_stuff
+- g2o_types_sba
+- g2o_types_sim3
+- g2o_solver_dense
+- g2o_solver_eigen
+- g2o_solver_csparse
+- g2o_csparse_extension
+- cxsparse
+
+other:
+- gomp
+- tbb
+- yaml-cpp
+
+
+##Include paths
+- /usr/include/suitesparse
+- /usr/local/include/opencv4    <= Only if you have opencv 4!
+- "${workspace_loc:/${ProjName}/src}"
+- "${workspace_loc:/${ProjName}/3rd/popl/include}"
+- "${workspace_loc:/${ProjName}/3rd/spdlog/include}"
+- "${workspace_loc:/${ProjName}/3rd/json/include}"
+
+##Preprocessor constants
+Also, set up these preprocessor settings in your IDE:
+
+- USE_PANGOLIN_VIEWER
+- USE_DBOW2
+
+#Changes in code
+- Some cero initialization on uninitialized members to silence warnings
+- Changed #include <Eigen/... with #include <eigen3/Eigen/... because eigen3/Eigen can be found in usual include path
+
+
+
+Original openvslam README follows:
+
 <p align="center">
 <img src="https://raw.githubusercontent.com/xdspacelab/openvslam/master/docs/img/logo.png" width="435px">
 </p>
