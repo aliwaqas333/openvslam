@@ -1,4 +1,5 @@
-#Welcome
+# Welcome
+
 This is a work in progress started on May 2020.  Original openvslam is being adapted to be built on eclipse instead of using cmake, to allow programmers modify the code mainly for testing and usability porpuses.
 
 This project is built in eclipse CDT with C++17 and opencv 4, on Ubuntu 20.04.  Should work on any:
@@ -10,7 +11,8 @@ This project is built in eclipse CDT with C++17 and opencv 4, on Ubuntu 20.04.  
 
 This readme will be updated with compilation tips, followed by original openvslam README.
 
-#Compilation tips
+# Compilation tips
+
 You need dependencies installed as indicated in openvslam installation manual.
 
 The following setting are already set up in eclipse .project files in this repository.
@@ -51,7 +53,8 @@ other:
 - yaml-cpp
 
 
-##Include paths
+## Include paths
+
 - /usr/include/suitesparse
 - /usr/local/include/opencv4    <= Only if you have opencv 4!
 - "${workspace_loc:/${ProjName}/src}"
@@ -59,13 +62,23 @@ other:
 - "${workspace_loc:/${ProjName}/3rd/spdlog/include}"
 - "${workspace_loc:/${ProjName}/3rd/json/include}"
 
-##Preprocessor constants
+## Preprocessor constants
+
 Also, set up these preprocessor settings in your IDE:
 
 - USE_PANGOLIN_VIEWER
 - USE_DBOW2
 
-#Changes in code
+## Miscelanous
+
+- GCC C++ compiler dialect: ISO C++17
+- GCC C++ compiler miscelanous: Support for pthreads
+- GCC Linker General: Support for pthreads
+
+May there be warnings about uninitialized members en spdlog/thread_pool.h .
+
+# Changes in code
+
 - Some cero initialization on uninitialized members to silence warnings
 - Changed #include <Eigen/... with #include <eigen3/Eigen/... because eigen3/Eigen can be found in usual include path
 
