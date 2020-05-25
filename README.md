@@ -1,6 +1,6 @@
 # Welcome
 
-This is a work in progress started on May 2020.  Original openvslam is being adapted to be built on eclipse instead of using cmake, to allow programmers modify the code mainly for testing and usability porpuses.
+This is a work in progress started on May 2020.  Original openvslam is being adapted to be built on eclipse instead of using cmake, to allow programmers modify the code mainly for testing and usability purposes.
 
 This project is built in eclipse CDT with C++17 and opencv 4, on Ubuntu 20.04.  Should work on any:
 
@@ -15,9 +15,10 @@ This readme will be updated with compilation tips, followed by original openvsla
 
 You need dependencies installed as indicated in openvslam installation manual.
 
-The following setting are already set up in eclipse .project files in this repository.
+The following setting are already set up in eclipse `.project` files in this repository.
 
-##Libraries settings
+## Libraries settings
+
 You'll need to set up these dependencies libraries in your IDE:
 
 Assuming local viewer (I didn't try web viewer):
