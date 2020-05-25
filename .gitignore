@@ -40,3 +40,6 @@ cmake-build-release/
 *.out
 *.app
 /Debug/
+/aist_living_lab_1/
+/aist_living_lab_2/
+/orb_vocab.dbow2

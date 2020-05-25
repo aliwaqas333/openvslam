@@ -15,6 +15,8 @@ This readme will be updated with compilation tips, followed by original openvsla
 
 You need dependencies installed as indicated in openvslam installation manual.
 
+You also need orb_vocab_dbow2, a 44MB file provided with openvslam.
+
 The following setting are already set up in eclipse `.project` files in this repository.
 
 ## Libraries settings

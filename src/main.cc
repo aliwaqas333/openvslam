@@ -106,10 +106,12 @@ void mono_tracking(const std::shared_ptr<openvslam::config>& cfg,
         }
 #endif
     });
+    pthread_setname_np(thread.native_handle(), "openVSLAM");
 
     // run the viewer in the current thread
 #ifdef USE_PANGOLIN_VIEWER
     viewer.run();
+    pthread_setname_np(pthread_self(), "Viewer");
 #elif USE_SOCKET_PUBLISHER
     publisher.run();
 #endif
