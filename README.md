@@ -1,6 +1,6 @@
 # Welcome
 
-This is a work in progress started on May 2020.  Original openvslam is being adapted to be built on eclipse instead of using cmake, to allow programmers modify the code mainly for testing and usability purposes.
+Original openvslam was adapted to be built on eclipse instead of using cmake, to allow programmers modify the code mainly for testing and usability purposes.
 
 This project is built in eclipse CDT with C++17 and opencv 4, on Ubuntu 20.04.  Should work on any:
 
@@ -13,6 +13,10 @@ This readme will be updated with status and compilation tips.  Please read `ORIG
 
 
 # Status
+
+Finshed.
+
+This is finished and unpolished work started and finished on May 2020.  Work on this is no longer expected, but can happen any time on without guarantee.
 
 May 25, 2020, it compiles and runs, interactive GUI appears on screen, two threads have names (openVSLAM and Viewer, useful for debugging), but it isn't grabing images from input video file.  No errors.
 
